@@ -12,12 +12,63 @@
 
 ## About the syntax
 
-> _give some code snippet of the language_
+> _basic syntax examples_
 
-*Assigning Variables*
+*Main entry point function, main*
+```
+fn main() {...} // empty main function with zero arguments passed
+```
 
-```Rust
+*Hello World on main*
+```
+fn main() {
+  println!("Hello World");
+}
+// println! is a macro function for println
+```
+
+*Declaring and Assigning Variables*
+```
+// use let for variable assignment
 let x = 10
+
+```
+
+*Declaring and Assigning Mutable Variables*
+```
+let mut x = 20;
+```
+
+*Collections: Declaring Tuple Variables*
+```
+let numTup: (i32, f32, i64) = (123, 1.23, 1.234);
+let (a, b, c) = numTup;
+```
+
+*Collections: Arrays*
+```
+let brands = ["Toyota", "Nissan", "Suzuki", "Honda", "Acura", "Volkswagen"];
+brands[2] // Suzuki
+```
+
+*Creating functions in Rust*
+```
+fn new_func() {
+  println!("Hello there!");
+}
+```
+
+*Functions with params/args*
+```
+// function with param x of type integer 32 bit
+fn new_func(x:i32) {
+  println!("Hello, {}", name)
+}
+```
+
+*Invoking a function*
+```
+new_func(500);  // -> 500
 ```
 
 ## About the tools

@@ -1,4 +1,4 @@
-###Rusk Programming Language Research Project
+### Rusk Programming Language Research Project
 
 - Abhiram Sinnarajah
 - Abhiram.sinnarajah@uoit.net
@@ -29,7 +29,7 @@ the file_name.rs needs to be compiled in order for it to be able to run the code
 is a binary ececutable. The machine runs this executable generated for the user. To compile a file, type rustc command followed
 by the file name. Ex.   rustc hello_world.rs
 Now run the compiled file with the .\ command.
-Ex.   .\hello_world.exe
+Ex.   .\hello_world
 This is how you compile and run a rust program.
 
 Cargo is the main build system within rust, as well as a package manager. Because of cargo, alot of work

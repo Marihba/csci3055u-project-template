@@ -14,12 +14,10 @@
 
 > _give some code snippet of the language_
 
-*Let form*
+*Assigning Variables*
 
-```clojure
-(let [x 10
-      y 20]
-  (+ x y))
+```Rust
+let x = 10
 ```
 
 ## About the tools

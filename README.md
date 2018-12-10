@@ -1,7 +1,7 @@
-# _Your project title_
+#Rusk Programming Language Research Project
 
-- _your name_
-- _your email (uoit.net)_
+- Abhiram Sinnarajah_
+- Abhiram.sinnarajah@uoit.net
 
 ## About the language
 

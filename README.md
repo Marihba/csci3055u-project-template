@@ -1,6 +1,6 @@
 #Rusk Programming Language Research Project
 
-- Abhiram Sinnarajah_
+- Abhiram Sinnarajah
 - Abhiram.sinnarajah@uoit.net
 
 ## About the language

@@ -180,12 +180,75 @@ To be able to run Firecracker, user must first clone the following git
 git clone https://github.com/firecracker-microvm/firecracker
 ```
 
-Once available the user can cd into the project directory and firecracker.
+Once available the user can cd into the project directory and do cargo run.
+
 Security features of the Firecracker allow for safe multi-tenant computing, assuming a well balanced and configured Linux host OS is used. 
 
 # Analysis of the language
 
-> _Organize your report according to the project description
-document_.
+### *Style of Rust Programming Language*
+
+Rust is a functional programming language with some additional features similar to C++. Function are created with the help of the fn operator. Main is the first entry point for a program, similar to majority of other languages. Rust requires semi-colon at the end of a statement.
+
+Rust's data types are eithe primitve or compound. Primitive meaning these are the most basic and 'Simple' data types, similar to Clojure simple. Types are referenced with a colon, and have many options for say integers.
+
+Example:
+- i8 (8 bit signed integers)
+- i32 (16 bit signed integers)
+- i32 (32 bit signed integers)
+- i64 (64 bit signed integers)
+
+Similar for Floats also and also includes variations for unsigned integers as well.
+### *Meta Programming*
+
+Rust has many amazing macro features, some of the most common being println!,
+
+
+### *Symbols and scopes in Rust*
+
+Rust uses let symbol in order to initialize and declare variables in rust.
+
+```
+let x = 100;
+```
+Here x is a symbol that is bound to the value 100. The program also follows static scoping, meaning lexical scope. To explicitly state a scope, the use of curly braces help.
+
+```
+{let x = 12;
+println!("x: {}", x);
+}
+println!("what was x again?", x);
+```
+
+The last line above will not work as it is outside the scope of where x was initially defined. Hence Rust would throw out an exception stating x is undefined.
+
+### *Rust Programming Constructs*
+
+Rust provides users access to the static and heap memory. Because of this, referencing and pointers are an important concept in Rust. Users are able to refer to the memory location of a scope for variables using the & similar to c++
+
+```
+&x = memory address of where data of x is stored in
+```
+
+This means that heap space is very important and costly, similar to other C++. Which means deallocation from users are a must. The great thing about Rust is that variable information on the heap are deallocated as soon as the variable goes out of scope. An amazing construct that Rust encorporates.
+
+Rust also supports object oriented programming as it embodies structs and enums.
+
+
+### *Additional information on Rust*
+
+List of Pros
+- very simple to use
+- statically typed
+- powerful memory allocation safety
+- concurrency safety
+- gives ability for mutable data
+-
+
+Cons of Rust
+- Referencing can be confusing
+- Function returns can be ambiguous at times, careful with statements!
+- Having mutable data possible can cause issues if data changes unexpectedly
+- Heap is useful, but accessing heap can be a little slow at times
 
 

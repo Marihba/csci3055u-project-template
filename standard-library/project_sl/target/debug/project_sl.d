@@ -1,0 +1,1 @@
+/mnt/c/Users/Abhiram96/Desktop/important\ document/Fall\ 2018/Programming\ Languages/Rust/project_sl/target/debug/project_sl: /mnt/c/Users/Abhiram96/Desktop/important\ document/Fall\ 2018/Programming\ Languages/Rust/project_sl/src/main.rs

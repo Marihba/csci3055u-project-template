@@ -158,7 +158,7 @@ contacts.insert("James", "123-4567");
 
 > *Rust Python*
 
-This is an intersting library that is an interpreter of the Python 3 shell in Rust!!
+This is an intersting open source project that is basically an interpreter of the Python 3 shell in Rust!!
 
 To be able to run such a program, user must first clone the following git 
 

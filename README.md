@@ -154,11 +154,34 @@ let mut contacts = HashMap::new();
 contacts.insert("James", "123-4567");
 ```
 
+## Some interesting open source contributions by Rust
 
-## About open source library
+> *Rust Python*
 
-> _Describe at least one contribution by the open source
-community written in the language._
+This is an intersting library that is an interpreter of the Python 3 shell in Rust!!
+
+To be able to run such a program, user must first clone the following git 
+
+```
+git clone https://github.com/RustPython/RustPython
+```
+
+Once available, the user can simply cd into the project directive and start using the interpreter by entering the cargo run command. This is a clean implentation and zero compatability hacks. Documentations of the project is 
+
+
+
+> *Firecracker*
+
+An open source virtualization technology with a main purpose for building and manage secure, multi-tenant container and function-based services for serverless opeational models. The main component of Firecracker is the Linux Kernel Virtual Machine (KVM). Developed at AWS to accelerate the speed and effieciency of services such as AWS Lamdbda and AWS Fargate. 
+
+To be able to run Firecracker, user must first clone the following git 
+
+```
+git clone https://github.com/firecracker-microvm/firecracker
+```
+
+Once available the user can cd into the project directory and firecracker.
+Security features of the Firecracker allow for safe multi-tenant computing, assuming a well balanced and configured Linux host OS is used. 
 
 # Analysis of the language
 

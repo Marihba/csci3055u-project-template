@@ -8,7 +8,7 @@
 > _What is rust?_
 > - From a beginners perspective, Rust's syntax gives a feeling as if it is a combination of C++ and Clojure syntax. The core of Rust language is functional programming. 
 > - History:
-Rust started off as a project in 2006 by a Mozilla employee, Graydon Hoare.Mozilla later sponsered the project in 2009. In 2010, Rust was officially announced in 2010. 
+Rust started off as a project in 2006 by a Mozilla employee, Graydon Hoare.Mozilla later sponsered the project in 2009. Rust was officially announced in 2010. 
 > - Some interesting features:
 A language that heavily focuses on safety and safe concurrency. Because of this, Rust is perfect for systems programming lanuage.The design allows users safer memory while mainting optimal performance. 
 
@@ -106,8 +106,54 @@ without actually creating the executable files.
 
 ## About the standard library
 
-> _Give some examples of the functions and data structures
-> offered by the standard library_.
+#### _Strings in Rust_
+
+```
+Strings are compound data types. To create and assign a string to a variable, we must call forth the string the :: operator.
+
+Ex. let str1 = String ::from("This is a string"); 
+```
+
+We can mutate the string above using a method within the standard library for String called push_str.
+```
+str.push_str1(" too!");
+Ex. println!(str1)  // This is a string too! 
+```
+
+Strings and other data types can also be spliced using references (&)
+```
+let newStr = &str1[8..15];  // the splicing is similar to the format of clojure's range specificiation
+                            // the first index is inclusive and mentions the start of splice
+                            // the last index, 15 is exlcusive and marks the end of the splice
+Ex. println!(newStr)    // a string
+```
+
+#### _Other Data structures_
+
+> Vectors 
+- A very basic and useful collection, similar to the many vectors in various other languages. 
+```
+let vec = vec![1, 2, 3, 4];     // assigning to the variable vec a result of th the creation of a vector with 
+for x in vec.iter() {           // help of the macro vector
+    println!("Vec contains {}", x);
+}
+```
+> HashMaps
+
+- Hash maps can be created using the HashMap constructor.
+- We can do this by including the following command at the very top of the file.
+```
+use std::collections::HashMap;
+```
+
+- A variable will refer to a HasMap intsance, user can then insert keys and values as long as they are within the 
+ scope of the definition and declaration of the HashMap. Of course to be able to do this, the namespace must be included so the compiler understands what HashMap means.
+
+```
+let mut contacts = HashMap::new();
+contacts.insert("James", "123-4567");
+```
+
 
 ## About open source library
 

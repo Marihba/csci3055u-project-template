@@ -8,5 +8,8 @@ Some of the key information covered in the main file of this project includes
 - creating a seperate function, other than main
 - how to implement such function in main
 - understanding return values for rust functions
-to run the main file in cargo, simply cd into the directory and enter 
+
+```
+To run the main file in cargo, simply cd into the project dir and enter 
 the command cargo run
+```

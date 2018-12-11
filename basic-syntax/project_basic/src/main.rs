@@ -9,11 +9,6 @@ fn main() {
         a-=1;
     }
 
-    // for loops
-    for i in nums.iter() {
-        println!("element at {} is {}",i, i*10);
-    }
-
     // single if/else statements
     println!("Is {} smaller than 10?", x);
     if x < 10 {

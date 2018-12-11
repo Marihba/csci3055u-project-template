@@ -206,7 +206,9 @@ Rust has many amazing macro features, some of the most common being println!,
 
 ### *Symbols and scopes in Rust*
 
-Rust uses let symbol in order to initialize and declare variables in rust.
+Rust uses the Principle of Ownership for symbols.
+
+An example of a scope would be a variable and we can use Let in order to initialize and declare such variables.
 
 ```
 let x = 100;
@@ -233,7 +235,18 @@ Rust provides users access to the static and heap memory. Because of this, refer
 This means that heap space is very important and costly, similar to other C++. Which means deallocation from users are a must. The great thing about Rust is that variable information on the heap are deallocated as soon as the variable goes out of scope. An amazing construct that Rust encorporates.
 
 Rust also supports object oriented programming as it embodies structs and enums.
+The struct follows similar implementation as the structs used in C++ shown below.
 
+```
+struct Course { // types are indicated after the variable names
+  title: String,  
+  code: String,
+  Capacity: i32,  // as mentioned above, this type means integer of size 32, 
+  average: f32    // likewise for the average, a float of type 32
+};
+```
+
+Other than the way the types are defined for this struct, it is quite similar and elegant as the structs we have seen in other languages. 
 
 ### *Additional information on Rust*
 

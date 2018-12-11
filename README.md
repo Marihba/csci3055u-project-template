@@ -1,4 +1,4 @@
-# Rusk Programming Language Research Project
+# Rust Programming Language Research Project
 
 - Abhiram Sinnarajah
 - Abhiram.sinnarajah@uoit.net

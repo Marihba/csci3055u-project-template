@@ -1,14 +1,16 @@
-### Rusk Programming Language Research Project
+# Rusk Programming Language Research Project
 
 - Abhiram Sinnarajah
 - Abhiram.sinnarajah@uoit.net
 
 ## About the language
 
-> _Describe the language_
->
-> - History
-> - Some interesting features
+> _What is rust?_
+> - From a beginners perspective, Rust's syntax gives a feeling as if it is a combination of C++ and Clojure syntax. The core of Rust language is functional programming. 
+> - History:
+Rust started off as a project in 2006 by a Mozilla employee, Graydon Hoare.Mozilla later sponsered the project in 2009. In 2010, Rust was officially announced in 2010. 
+> - Some interesting features:
+A language that heavily focuses on safety and safe concurrency. Because of this, Rust is perfect for systems programming lanuage.The design allows users safer memory while mainting optimal performance. 
 
 ## About the syntax
 

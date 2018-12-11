@@ -251,11 +251,13 @@ Other than the way the types are defined for this struct, it is quite similar an
 Rust has its own operator known as match. This is an operator that helps a user compare one value against a series of preset patterns. Once a match is found, it will execute the true portion of the code. Below is an example run through of matching patterns for a given string.
 
 ```
-  let str1 = String::from("A string!");
-  match str1 {
-      Some("str")=> "str".to_string(),
-      None => "Does not exist".to_string(),
-  }
+  let number = 3;
+  match number {
+    1 => println!("It's one!"),
+    2 => println!("It's two!"),
+    3 => println!("It's three!"),
+    _ => (),    // here the _ means all other alternatives specified after the above cases.
+}
 ```
 
 Operator such as these make this language very robust and widespread.

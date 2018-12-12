@@ -300,3 +300,6 @@ Cons of Rust
 - Heap is useful, but accessing heap can be a little slow at times
 
 
+## Final thoughts on this project
+
+The language appears to be a bit tough at start, but continous review and learning show that this is a powerful language that is certainly understandble why it has its marks as a systems programming language. 

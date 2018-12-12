@@ -190,6 +190,12 @@ Security features of the Firecracker allow for safe multi-tenant computing, assu
 
 Rust is a functional programming language with some additional features similar to C++. Function are created with the help of the fn operator. Main is the first entry point for a program, similar to majority of other languages. Rust requires semi-colon at the end of a statement.
 
+The style of this language is snake case, meaning everything must be represented with lower cases and if necessary underscores. Look at example below:
+
+```
+let my_var = 123;
+```
+
 Rust's data types are eithe primitve or compound. Primitive meaning these are the most basic and 'Simple' data types, similar to Clojure simple. Types are referenced with a colon, and have many options for say integers.
 
 Example:

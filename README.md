@@ -201,7 +201,22 @@ Example:
 Similar for Floats also and also includes variations for unsigned integers as well.
 ### *Meta Programming*
 
-Rust has many amazing macro features, some of the most common being println!,
+Rust has many amazing macro features, some of the most common being println! to even using Macros for exception handling. For instance one specific Macro called Panic! is used as a worst case situation arises during the programs run. In this case, when a failure occurs the program will indicate user with a failure message, back track ("reroll"), cleans stack and quits the program; how awesome is that!
+
+An example of this usage would be like follows:
+
+```
+let vec = vec![1, 2, 3, 4, 5];
+v[50] // clearly this should cause an error
+```
+
+Running this code above in the main results in the follow response from the compiler. 
+
+```
+thread 'main' panicked at 'index out of bounds: the len is 5 but the index is 50', libcore/slice/mod.rs:2448:10
+note: Run with `RUST_BACKTRACE=1` for a backtrace.
+```
+
 
 
 ### *Symbols and scopes in Rust*
